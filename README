@@ -1,0 +1,6 @@
+Non-scientific Benchmark of some caching approaches in Perl.
+
+The most popular caching approach in Perl in CHI which has backend plugins for in-memory caching, memcached, file system caching (which is NFS-safe), and MySQL.
+
+Keep in mind that data, in particular numerical data, can be represented differently on different types of computer architectures (e.g. 64 bit vs 32 bit). If you are not sure, you should take measures to not share cached data between different platforms. The easiest way to achieve this is also include the name of the platform in the cache key or in in the name of the directory where you cache files.
+
